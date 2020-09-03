@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:id="@+id/btnExit"
+        android:text="Exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edtIdAuthor"
+        android:layout_below="@id/btnExit"
+        android:hint="Nhập mã tác giả"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_below="@id/edtIdAuthor"
+        android:hint="Nhập tên tác giả"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_below="@id/edtName"
+        android:hint="Nhập email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edtAddres"
+        android:layout_below="@id/edtEmail"
+        android:hint="Nhập đia chỉ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnXem"
+        android:text="Chọn"
+        android:layout_below="@id/edtAddres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnThem"
+        android:text="Thêm"
+        android:layout_below="@id/edtAddres"
+        android:layout_toRightOf="@id/btnXem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnXoa"
+        android:text="Xóa"
+        android:layout_toRightOf="@id/btnThem"
+        android:layout_below="@id/edtAddres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnSua"
+        android:text="Cập nhật"
+        android:layout_toRightOf="@id/btnXoa"
+        android:layout_below="@id/edtAddres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <GridView
+        android:id="@+id/gridViewAuthor"
+        android:numColumns="4"
+        android:layout_below="@id/btnXem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

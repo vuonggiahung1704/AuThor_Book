@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:id="@+id/btnExit"
+        android:text="Exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edtIdBook"
+        android:layout_below="@id/btnExit"
+        android:hint="Nhập mã sách"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edtTitle"
+        android:layout_below="@id/edtIdBook"
+        android:hint="Nhập tên sách"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edtId_Author"
+        android:layout_below="@id/edtTitle"
+        android:hint="Nhập tác giả"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnXem"
+        android:text="Chọn"
+        android:layout_below="@id/edtId_Author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnThem"
+        android:text="Thêm"
+        android:layout_below="@id/edtId_Author"
+        android:layout_toRightOf="@id/btnXem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnXoa"
+        android:text="Xóa"
+        android:layout_toRightOf="@id/btnThem"
+        android:layout_below="@id/edtId_Author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnSua"
+        android:text="Cập nhật"
+        android:layout_toRightOf="@id/btnXoa"
+        android:layout_below="@id/edtId_Author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <GridView
+        android:id="@+id/gridViewBook"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/btnXem"
+        android:numColumns="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
